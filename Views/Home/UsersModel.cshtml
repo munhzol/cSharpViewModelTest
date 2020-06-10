@@ -1,0 +1,16 @@
+@using MvcTest.Models
+@model List<User>;
+
+@{
+    ViewData["Title"] = "User Models";
+    ViewData["cmd"] = "users";
+}
+
+<ul>
+@foreach (var user in @Model)
+{
+    <li>@user.FirstName @user.LastName</li>
+}
+</ul>
+
+

@@ -1,0 +1,15 @@
+@model int[];
+
+@{
+    ViewData["Title"] = "Home Page";
+    ViewData["cmd"] = "numbers";
+}
+
+<ul>
+@foreach (var num in @Model)
+{
+    <li>@num</li>
+}
+</ul>
+
+

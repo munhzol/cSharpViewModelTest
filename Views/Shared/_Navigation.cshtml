@@ -1,0 +1,41 @@
+<div class="m-3">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            @{
+                if((string)ViewData["cmd"] == "string"){
+                    <a class="nav-link active" href="/">String</a>
+                } else {
+                    <a class="nav-link" href="/">String</a>
+                }
+            }
+        </li>
+        <li class="nav-item">
+            @{
+                if((string)ViewData["cmd"] == "numbers"){
+                    <a class="nav-link active" href="/numbers">Array of Integers</a>
+                } else {
+                    <a class="nav-link" href="/numbers">Array of Integers</a>
+                }
+            }
+        </li>
+
+        <li class="nav-item">
+            @{
+                if((string)ViewData["cmd"] == "users"){
+                    <a class="nav-link active" href="/users">Users</a>
+                } else {
+                    <a class="nav-link" href="/users">Users</a>
+                }
+            }
+        </li>
+        <li class="nav-item">
+            @{
+                if((string)ViewData["cmd"] == "user"){
+                    <a class="nav-link active" href="/user">Random User</a>
+                } else {
+                    <a class="nav-link" href="/user">Random User</a>
+                }
+            }
+        </li>
+    </ul>
+</div>
